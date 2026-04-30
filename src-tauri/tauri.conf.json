@@ -20,7 +20,7 @@
       }
     ],
     "security": {
-      "csp": "default-src 'self'; script-src 'self' 'unsafe-eval' blob:; worker-src blob: 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.anthropic.com https://api.openai.com https://openrouter.ai http://localhost:11434; img-src 'self' data:"
+      "csp": "default-src 'self'; script-src 'self' 'unsafe-eval' blob:; worker-src blob: 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.anthropic.com https://api.openai.com https://openrouter.ai http://localhost:11434; img-src 'self' data: blob:; font-src 'self' data:"
     }
   },
   "bundle": {
