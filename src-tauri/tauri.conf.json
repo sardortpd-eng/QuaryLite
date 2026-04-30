@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "QuaryLite",
+  "version": "0.1.0",
+  "identifier": "com.querylite.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "QuaryLite",
+        "width": 1100,
+        "height": 720,
+        "minWidth": 720,
+        "minHeight": 480
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'unsafe-eval' blob:; worker-src blob: 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.anthropic.com https://api.openai.com https://openrouter.ai http://localhost:11434; img-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "publisher": "QuaryLite",
+    "copyright": "© 2026 QuaryLite. MIT License.",
+    "category": "DeveloperTool",
+    "shortDescription": "A fast SQLite IDE with AI-powered SQL generation.",
+    "longDescription": "QuaryLite is an open-source desktop SQLite IDE. Browse tables, run queries in a Monaco editor, explore schema relationships, manage transactions, and ask an AI assistant to write SQL — using Anthropic, OpenAI, OpenRouter, or a local Ollama model.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

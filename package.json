@@ -1,0 +1,55 @@
+{
+  "name": "querylite",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A fast SQLite IDE with AI-powered SQL generation",
+  "author": "QuaryLite",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/querylite/querylite"
+  },
+  "homepage": "https://github.com/querylite/querylite",
+  "bugs": {
+    "url": "https://github.com/querylite/querylite/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@tanstack/react-table": "^8.21.3",
+    "@tanstack/react-virtual": "^3.13.24",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.7.0",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-store": "^2.4.2",
+    "@types/dagre": "^0.7.54",
+    "@types/dompurify": "^3.0.5",
+    "@xyflow/react": "^12.10.2",
+    "dagre": "^0.8.5",
+    "dompurify": "^3.4.1",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^1.11.0",
+    "marked": "^18.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "@tauri-apps/cli": "^2",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^4.2.4",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  }
+}
